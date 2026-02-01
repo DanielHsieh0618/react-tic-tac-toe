@@ -20,7 +20,7 @@ function App() {
     setXIsCurrent(nextMove % 2 === 0);
   }
 
-  const moves = history.map((squares, idx) => {
+  const moves = history.map((_squares, idx) => {
     const move = idx + 1;
     let description;
     if (move > 0) {
