@@ -67,6 +67,7 @@ custom CSS
 
 .game{
   display: flex;
+  margin-bottom: 20px;
 }
 
 .game-board{

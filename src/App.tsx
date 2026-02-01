@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Board from "./components/Board";
+import ThreeJsViewer from "./components/ThreeJsViewer";
 
 function App() {
   // const [squares, setSquares] = useState<Array<string | null>>(Array(9).fill(null));
@@ -29,8 +30,8 @@ function App() {
       description = "Go to game start";
     }
     return (
-      <li>
-        <button key={move} onClick={() => jumpTo(move)}>
+      <li key={move}>
+        <button onClick={() => jumpTo(move)}>
           {description}
         </button>
       </li>
@@ -46,6 +47,7 @@ function App() {
           <ol>{moves}</ol>
         </div>
       </div>
+      <ThreeJsViewer></ThreeJsViewer>
     </>
   );
 }
